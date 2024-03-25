@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.patient-record{
+    width: 90%;
+    background-color: red;
+    margin-top: 50px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 5px;
+}
+.record-txt{
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    /* border-radius: 5px 0 5px 0; */
+    background-color: rgba(235, 237, 238,0.5);
+    
+}
+.record-txt h3{
+    padding: 10px;
+    color: #555;
+}
+
+.patient-record .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.patient-record .search .search-box {
+    display: flex;
+    justify-content: center;
+    width: 80%; 
+    max-width: 400px; 
+    text-align: center;
+    position: relative;
+}
+
+.patient-record .search .search-box input {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.patient-record .search .search-box input:focus {
+    outline: none;
+    border: 1px solid #134978;
+}
+
+.patient-record .search .search-box button {
+    position: absolute;
+    padding: 10px 20px;
+    right: 0; 
+    
+    background-color: #134978;
+    border: none;
+    cursor: pointer;
+}
+
+.patient-record .search .search-box button .search-icon {
+    font-size: 15px;
+    color: white;
+}
+
+.tables{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 10px auto;
+    background-color: #fff;
+}
+.tables table{
+    width: 100%;
+    text-align: center;
+}
+
+.tables table thead th{
+    font-size: 16px;
+    color: rgba(85, 85, 85,0.8);
+}
+.tables table td{
+    font-size: 16px;
+    color: rgba(85, 85, 85);
+}
+.tables table,th,td{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 10px;
+}
+.tables .btn{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tables .btn button{
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: #134978;
+    cursor: pointer;
+}
+.tables .btn .view-btn{
+    background-color: rgb(71, 188, 143);
+}
+.tables .btn .update{
+    background-color: #134978;
+}
+.tables .btn button:hover{
+    background-color: white;
+    border: 1px solid rgb(71, 188, 143);
+    color: rgb(71, 188, 143);
+}
+
+.tables .btn .update:hover{
+    background-color: white;
+    border: 1px solid #134978;
+    color: #134978;
+}

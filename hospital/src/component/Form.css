@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.body1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(204, 204, 204,0.5);
+}
+
+.main-form{
+    width: 90%;
+    padding: 10px 0;
+    background-color: #fff;
+    margin: 50px auto;
+    border-radius: 5px;
+    border: 2px solid #e6e6e6;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.txt-field{
+    padding: 15px;
+    background-color: rgba(235, 237, 238,0.5);
+}
+.txt-field2{
+    padding: 15px 35px;
+}
+
+.txt-field h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: #134978;
+}
+
+.txt-field2 h4{
+    font-size: 16px;
+    font-weight: 500;
+    color: #6f86d6;
+}
+.personal{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    border-bottom: 1px solid #666;
+    
+}
+
+.personal .personal-fields{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 20%;
+}
+
+.personal-fields .red{
+    color: darkred;
+    font-size: 18px;
+}
+.personal .personal-fields input{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 2px;
+    background-color: #f2f2f2;
+}
+.personal .personal-fields input:focus{
+    border: 1px solid #134978;
+}
+.personal .personal-fields label{
+    padding: 0 0 8px 5px;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 400;
+}
+.select-option{
+    padding: 10px;
+    outline: none;
+    border: 1px solid #bbb;
+    background-color: #f2f2f2;
+    border-radius: 2px;
+}
+
+
+
+.select-option:focus{
+    border: 1px solid #134978;
+}
+
+.report-fields {
+    display: grid;
+    grid-template: repeat(auto-fill, minmax(100px, 1fr))/repeat(4,1fr);
+    border-bottom: 1px solid #ccc;
+    gap: 15px; 
+}
+
+.report-fields .fields-all {
+    padding: 10px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.report-fields .fields-all input{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    outline: none;
+    border-radius: 2px;
+    text-align: left;
+    background-color: #f2f2f2;
+}
+
+.report-fields .fields-all input:focus{
+    border: 1px solid #134978;
+}
+
+.report-fields .fields-all label{
+    padding: 0 0 8px 5px;
+    color: #444;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.reports2{
+    margin-top: 25px;
+}
+
+.report-fields2 {
+    display: grid;
+    grid-template: repeat(auto-fill, minmax(100px, 1fr))/repeat(4,1fr);
+    gap: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.report-fields2 .fields-all2 {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.report-fields2 .fields-all2 input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    outline: none;
+    border-radius: 2px;
+    text-align: left;
+    background-color: #f2f2f2;
+}
+
+.report-fields2 .fields-all2 input:focus {
+    border: 1px solid #6f86d6;
+}
+
+.report-fields2 .fields-all2 label {
+    padding: 0 0 8px 5px;
+    color: #444;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.submition-btn{
+    padding: 10px;
+    
+    text-align: center;
+    margin: 20px;
+}
+
+.submition-btn button{
+    padding: 10px;
+    width: 10%;
+    background-color: #134978;
+    outline: none;
+    color: #fff;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submition-btn button:hover{
+    background-color: #fff;
+    color: #134978;
+    border: 1px solid #134978;
+}

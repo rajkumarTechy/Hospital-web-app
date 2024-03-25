@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.body8{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    margin-top: 2%;
+    border: 1px solid #ccc;
+}
+.main-detail{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    padding: 5px;
+    background-color: #fff;
+    border-bottom: 3px solid black;
+    
+}
+
+.main-detail .logo-icon img{
+    width: 60%;
+    
+}
+.main-detail .doc-detail{
+    width: 100%;
+    margin-left: -90px;
+}
+
+.main-detail .doc-detail h1{
+    padding: 5px;
+    font-size: 20px;
+}
+
+.main-detail .doc-detail ul{
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+   
+}
+
+.main-detail .doc-detail ul li{
+    padding: 0 10px 0 5px;
+    border-right: 2px solid black;
+    padding-right: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.main-detail .doc-detail ul li:last-child{
+    border-right: none;
+}
+
+.main-detail .doc-detail h4{
+    padding: 5px;
+    font-weight: 400;
+    font-size: 12px;
+
+}
+
+.doc-detail span{
+    color: #134978;
+}
+
+.contact{
+    margin-left: 20%;
+    padding: 10px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    margin-left: 5%;
+}
+
+.contact .cont-detail{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact .cont-detail h3{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.contact .cont-detail .phone{
+    color: green;
+}
+
+.contact .cont-detail .envelope{
+    color: darkgoldenrod;
+}
+
+/* .block{
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    width: 100%;
+    background-color: #555;
+    
+}
+.block .block1{
+    width: 30%;
+    background-color: rgb(71, 188, 143);
+    
+} */
+
+/* .block .block1::after{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    content: "";
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+
+} */
+
+.patient-main{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    border-bottom: 1px solid #ccc;
+    margin-top: 3%;
+}
+
+.patient-main .patient-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    gap: 5px;
+    border-right: 1px solid #ccc;
+    padding-right: 100px;
+}
+.patient-main .collect-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid #ccc;
+    padding-right: 100px;
+}
+.patient-main .patient-detail h2{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.patient-main .patient-detail h5{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.patient-main .patient-detail h5 span{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.patient-main .collect-detail h4{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.patient-main .collect-detail h3{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.patient-main .collect-detail h2{
+    font-size: 14px;
+    font-weight: 500;
+}
+.patient-main .date{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.patient-main .date h5{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.main-table{
+    width: 95%;
+    padding: 0 10px;
+}
+.main-table h2{
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.main-table table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.main-table table tbody tr td{
+    padding: 8px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    border: 1px solid #ccc;
+}
+
+.main-table thead th {
+    background-color: #ccc; 
+    padding: 8px 5px;
+    border-right: 2px solid #bbb;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.main-table thead th:last-child{
+    border-right: none;
+}
+
+.main-table tbody tr.head-div th {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+}
+
+.main-table tbody tr.dia th {
+    margin-top: 100px;
+}
+
+
+.result-column {
+    position: relative;
+}
+
+.result-indicator {
+    position: absolute;
+    left: -72px;
+    color: darkkhaki;
+    padding-right: 8px;
+}
+
+.more-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    width: 95%;
+    padding:  10px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.more-info h4{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.more-info span{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.end{
+    display: flex;
+    gap: 30%;
+    text-align: left;
+    width: 95%;
+    margin-top: 5px;
+}
+
+.end h4{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.signature{
+    width: 95%;
+    margin-top: 5%;
+    text-align: right;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.signature .doc-sign{
+    
+    display: inline-block;
+    text-align: center;
+}
+
+.signature .doc-sign h5{
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+
+.last{
+    text-align: right;
+    width: 95%;
+    padding: 15px;
+}
+
+.last h4{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.last-last{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    page-break-after: always;
+}
+
+.download-btn{
+    text-align: left;
+    padding: 20px;
+}
+
+.download-btn button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #134978;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.download-btn button:hover{
+    background-color: #fff;
+    color: #134978;
+    border: 1px solid #134978;
+}
+
+

@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.main-content{
+    width: 100%;
+    height: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    height: 250px;
+}
+
+.box button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px; 
+    border-radius: 10px ;
+    background-color: #134978;
+    border: none;
+    cursor: pointer;
+}
+
+.box button:hover{
+    background-color: #fff;
+    border: 1px solid #134978;
+}
+
+.box button .icon-file{
+    text-align: center;
+    font-size: 50px;
+    padding: 25px;
+    color: #fff
+}
+
+.box button h5{
+    font-size: 18px;
+    color: #fff;
+}
+
+.box button:hover .icon-file,.box button:hover h5 {
+    color: #134978;
+    transition: 0.3s all ;
+}
