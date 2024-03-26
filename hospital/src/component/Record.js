@@ -10,7 +10,7 @@ const Record = () => {
     const[personalData,setPersonalData] = useState([])
 
     useEffect(()=>{
-        axios.get('https://hospital-web-app-4dvy.vercel.app/records')
+        axios.get('https://hospital-web-app-6h93.vercel.app/records')
         .then(res=>setPersonalData(res.data))
         .catch(err=>(console.log(err)))
     },[])

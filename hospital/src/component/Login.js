@@ -18,7 +18,7 @@ const Login = () => {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        axios.post('https://hospital-web-app-4dvy.vercel.app/login', values)
+        axios.post('https://hospital-web-app-6h93.vercel.app/login', values)
             .then(res => {
                 if (res.data.Status === "Success") {
                     
