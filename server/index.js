@@ -22,6 +22,12 @@ app.use(cors({
     credentials: true
 }));
 
+app.use(function (req, res, next) {
+    response.header("Access-Control-Allow-Origin", "*");
+    response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
+
 const db = mysql.createConnection({
     host: process.env.HOST_NAME,
     user: process.env.MYSQL_USERNAME,
