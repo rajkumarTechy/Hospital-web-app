@@ -17,7 +17,7 @@ const Home = () => {
     const msg = "Please Login";
 
     useEffect(() => {
-        axios.get('http://localhost:3001') // Endpoint to check authentication status
+        axios.get('https://hospital-web-app-4dvy.vercel.app/') // Endpoint to check authentication status
             .then(res => {
                 if (res.data.Status === 'Success') {
                     setAuth(true); 

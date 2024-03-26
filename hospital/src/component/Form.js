@@ -91,7 +91,7 @@ const Form = () => {
         if (isConfirmed) {
             if(formData.contact.length === 10){
                 if(formData.age >=0 && formData.age <= 110){
-                    axios.post('http://localhost:3001/reports', formData)
+                    axios.post('https://hospital-web-app-4dvy.vercel.app/reports', formData)
                         .then(res => {
                             navigate('/pdf', {state : {formData : formData}})
                             toast.success('Data Added Successfully')

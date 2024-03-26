@@ -36,7 +36,7 @@ const Header = () => {
     }, []);
     
     const handleLogout=()=>{
-      axios.get('http://localhost:3001/logout')
+      axios.get('https://hospital-web-app-4dvy.vercel.app/logout')
       .then(res=>{
         
         navigate('/')
