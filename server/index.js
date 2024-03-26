@@ -48,6 +48,10 @@ const verifyUser = (req,res,next) =>{
     }
 }
 
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
+
 app.get('/', verifyUser, (req,res)=>{
 
     return res.json({Status:"Success", name:req.name})
