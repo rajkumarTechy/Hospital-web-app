@@ -5,6 +5,7 @@ import cookieParser from 'cookie-parser'
 import jwt from 'jsonwebtoken'
 import multer from 'multer'
 
+require('dotenv').config();
 
 
 
@@ -16,19 +17,18 @@ app.use(express.json())
 app.use(cookieParser())
 
 app.use(cors({
-    origin: ["http://localhost:3000"],
+    origin: ["https://hospital-web-app.vercel.app/"],
     methods: ["POST", "GET"],
     credentials: true
 }));
 
 const db = mysql.createConnection({
-
-    host:"localhost",
-    user:"root",
-    password:"",
-    database:"hospital"
-
-})
+    host: process.env.HOST_NAME,
+    user: process.env.MYSQL_USERNAME,
+    password: process.env.MYSQL_PASSWORD,
+    database: process.env.DATABASE_NAME
+  });
+  
 
 const verifyUser = (req,res,next) =>{
     const token = req.cookies.token;
