@@ -12,7 +12,7 @@
             "dest": "/" ,
             "methods": ["POST","GET"],
             "headers": { 
-              "Access-Control-Allow-Origin": "https://hospital-web-app.vercel.app/",
+              "Access-Control-Allow-Origin": "https://hospital-web-app.vercel.app",
               "Access-Control-Allow-Credentials":"true"
             }
         }
