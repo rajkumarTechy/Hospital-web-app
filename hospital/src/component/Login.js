@@ -6,7 +6,7 @@ import { toast } from 'wc-toast';
 
 const Login = () => {
     const navigate = useNavigate();
-    
+    axios.defaults.withCredentials = true;
 
     const [values, setValues] = useState({
         username: '',
@@ -18,7 +18,6 @@ const Login = () => {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        axios.defaults.withCredentials = true;
         axios.post('https://hospital-web-app-4dvy.vercel.app/login', values)
             .then(res => {
                 if (res.data.Status === "Success") {
