@@ -133,7 +133,7 @@ const Pdf = () => {
                 <div className="collect-detail">
                     <h3>Sample Collected At:</h3>
                     <h4>Sri Krishna Diagnostics</h4>
-                    <h2>Ref. By :</h2>
+                    <h2>Ref. By :{formData.doc_name}</h2>
                 </div>
                 <div className="date">
                     {/* <h5>Collected On :{formattedDateTime}</h5> */}
