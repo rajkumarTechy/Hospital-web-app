@@ -22,7 +22,7 @@ const Login = () => {
             .then(res => {
                 if (res.data.Status === "Success") {
                     // Store token in local storage
-                    localStorage.setItem('token', res.data.token);
+                    console.log(res.data.token)
                     navigate('/');
                     window.location.reload(true);
                 } else {
