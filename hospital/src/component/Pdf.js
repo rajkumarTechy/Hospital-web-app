@@ -136,7 +136,7 @@ const Pdf = () => {
                     <h2>Ref. By :</h2>
                 </div>
                 <div className="date">
-                    <h5>Collected On :{formattedDateTime}</h5>
+                    {/* <h5>Collected On :{formattedDateTime}</h5> */}
                     <h5>Dispatched On :{formattedDateTime}</h5>
                 </div>
             </div>
@@ -291,7 +291,7 @@ const Pdf = () => {
                             <tr>
                                 <td>Pus Cell</td>
                                 <td>{formData.Pus_Cell}</td>
-                                <td>&lt;5</td>
+                                <td>10 - 15</td>
                                 <td>HPF</td>
                             </tr>
                         )}
@@ -629,14 +629,14 @@ const Pdf = () => {
                     <h4>Instruments: <span>Fully automated cell counter</span></h4>
                     <h4>Interpretation: <span>Further confirm for Anemia</span></h4>
                 </div>
-                <div className="end">
+                {/* <div className="end">
                     <h4>Thanks for Reference</h4>
                     <h4>****End of Report****</h4>
-                </div>
+                </div> */}
                 <div className="signature">
                     <div className="doc-sign">
-                        <h4>Dr.Krishna</h4>
-                        <h5>(M.D.D.M. DNB)</h5>
+                        <h4>Authorised Signature</h4>
+                        
                     </div>
                 </div>
                 <div className="last">
