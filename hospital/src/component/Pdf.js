@@ -19,7 +19,7 @@ const Pdf = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        axios.get('https://hospital-web-app-hm9w.vercel.app/latest-pid')
+        axios.get('https://hospital-web-app-aqvg.vercel.app/latest-pid')
             .then(res => {
 
                     setLatestPid(res.data.maxId);
