@@ -382,10 +382,10 @@ const Form = () => {
                                     <label>Albumin</label>
                                     <select className="select-option"  name="Albumin_urine" onChange={handleChange}  >
                                         <option>Select</option>
-                                        <option value="+1" >Male</option>
-                                        <option value="+2">Female</option>
-                                        <option value="+3">Female</option>
-                                        <option value="+4">Female</option>
+                                        <option value="+1" >+1</option>
+                                        <option value="+2">+2</option>
+                                        <option value="+3">+3</option>
+                                        <option value="+4">+4</option>
                                         <option value="trace">trace</option>
                                         <option value="nil">nil</option>
                                     </select>
@@ -394,10 +394,10 @@ const Form = () => {
                                     <label>Sugar</label>
                                     <select className="select-option"  name="sugar" onChange={handleChange}  >
                                         <option>Select</option>
-                                        <option value="+1" >Male</option>
-                                        <option value="+2">Female</option>
-                                        <option value="+3">Female</option>
-                                        <option value="+4">Female</option>
+                                        <option value="+1" >+1</option>
+                                        <option value="+2">+2</option>
+                                        <option value="+3">+3</option>
+                                        <option value="+4">+4</option>
                                         <option value="trace">trace</option>
                                         <option value="nil">nil</option>
                                     </select>
