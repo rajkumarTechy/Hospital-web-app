@@ -152,11 +152,11 @@ const Pdf = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        {/* <tr>
                             <td>Primary Sample Type:</td>
                             <td colspan="3">Blood</td>
                             
-                        </tr>
+                        </tr> */}
                         {Complete_bld_ct && <tr className="head-div">
                             <th colspan="4">Complete Blood Count(CBC)</th>
                         </tr>}
@@ -167,7 +167,7 @@ const Pdf = () => {
                                 <td className="result-column">
                                     <span className="result-value">4000 - 11000</span>
                                 </td>
-                                <td>g/dL</td>
+                                <td>cells</td>
                             </tr>
                         )}
                         {formData.RBC && (
@@ -232,8 +232,8 @@ const Pdf = () => {
                             <tr>
                                 <td>Platelet Count</td>
                                 <td>{formData.Paltelet}</td>
-                                <td>150 - 400 x10<sup>9</sup></td>
-                                <td>%</td>
+                                <td>1.5 - 4</td>
+                                <td>laks</td>
                             </tr>
                         )}
                         {formData.MPV && (
@@ -269,7 +269,7 @@ const Pdf = () => {
                             </tr>
                         )} 
                         {Urine && <tr className="head-div">
-                            <th colspan="4">Urin Analysis</th>
+                            <th colspan="4">Urine Analysis</th>
                         </tr>}
                         {formData.Albumin_urine && (
                             <tr>
@@ -303,14 +303,22 @@ const Pdf = () => {
                                 <td>HPF</td>
                             </tr>
                         )}
-                        {formData.RBC_Crystal && (
+                        {formData.RBCC && (
                             <tr>
-                                <td>RBC Crystal</td>
-                                <td>{formData.RBC_Crystal}</td>
+                                <td>RBC</td>
+                                <td>{formData.RBCC}</td>
                                 <td>&lt;5</td>
                                 <td>HPF</td>
                             </tr>
                         )} 
+                        {formData.Crystal && (
+                            <tr>
+                                <td>Crystal</td>
+                                <td>{formData.Crystal}</td>
+                                <td>&lt;5</td>
+                                <td>HPF</td>
+                            </tr>
+                        )}
                         {Diabetes_pro && <tr className="head-div">
                             <th colspan="4">Diabetes Profile</th>
                         </tr>}
@@ -318,7 +326,7 @@ const Pdf = () => {
                             <td>Fasting Blood Sugar(FBS)</td>
                             <td>{formData.Fasting_Blood_Sugar}</td>
                             <td className="result-column">
-                                <h4 className="result-indicator" style={{color: "darkred"}}>{(() => {
+                                {/* <h4 className="result-indicator" style={{color: "darkred"}}>{(() => {
                                     if (formData.Fasting_Blood_Sugar >= 70 && formData.Fasting_Blood_Sugar <=90) {
                                         return "Normal";
                                     }  else if(formData.Fasting_Blood_Sugar >= 100 && formData.Fasting_Blood_Sugar <=126) {
@@ -328,7 +336,7 @@ const Pdf = () => {
                                     }else{
                                         return ""
                                     }
-                                })()}</h4>
+                                })()}</h4> */}
                                 <span className="result-value">{(() => {
                                     if (formData.Fasting_Blood_Sugar >= 70 && formData.Fasting_Blood_Sugar <=99) {
                                         return "70 - 99";
@@ -348,7 +356,7 @@ const Pdf = () => {
                             <td>Post-Prandial Blood Sugar (PPBS)</td>
                             <td>{formData.Post_Prandial_Blood}</td>
                             <td className="result-column">
-                                <h4 className="result-indicator" style={{color: "darkred"}}>{(() => {
+                                {/* <h4 className="result-indicator" style={{color: "darkred"}}>{(() => {
                                     if (formData.Post_Prandial_Blood >= 100 && formData.Post_Prandial_Blood <=140) {
                                         return "Normal";
                                     }  else if(formData.Post_Prandial_Blood >= 140 && formData.Post_Prandial_Blood <=199) {
@@ -358,7 +366,7 @@ const Pdf = () => {
                                     }else{
                                         return ""
                                     }
-                                })()}</h4>
+                                })()}</h4> */}
                                 <span className="result-value">{(() => {
                                     if (formData.Post_Prandial_Blood >= 100 && formData.Post_Prandial_Blood <=140) {
                                         return "100 - 140";
@@ -405,12 +413,12 @@ const Pdf = () => {
                             </td> 
                             <td>%</td>
                         </tr>} 
-                        {formData.CPR && <tr>
+                        {/* {formData.CPR && <tr>
                             <td>CPR</td>
                             <td>{formData.CPR}</td>
                             <td>&lt;0.3</td> 
                             <td>mg/dl</td>
-                        </tr> }
+                        </tr> } */}
                         {renel && <tr className="head-div">
                             <th colspan="4">Renal Function Test</th>
                         </tr>}
@@ -548,11 +556,11 @@ const Pdf = () => {
                             <td>2 - 3.5</td> 
                             <td>gm/dl</td>
                         </tr> }
-                        {lvr_function && <tr>
+                        {/* {lvr_function && <tr>
                             <td>Albumin<strong>:</strong>Globumin Ratio</td>
                             <td colSpan={3}>1.2 - 1.5</td>
                             
-                        </tr> }
+                        </tr> } */}
                         {Lipid && <tr className="head-div">
                             <th colspan="4">Lipid Profile</th>
                         </tr>}

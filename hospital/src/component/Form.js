@@ -61,7 +61,8 @@ const Form = () => {
         Sugar:null,
         Pus_Cell:null,
         Epithelial_Cell:null,
-        RBC_Crystal:null,
+        RBCC:null,
+        Crystal:null,
 
         // Diabetes Profile
         Fasting_Blood_Sugar:null,
@@ -379,18 +380,37 @@ const Form = () => {
                             
                                 <div className="fields-all2">
                                     <label>Albumin</label>
-                                    <input type="number" min="0" 
-        max="100" step="0.1" name="Albumin_urine" onChange={handleChange}/>
+                                    <select className="select-option"  name="Albumin_urine" onChange={handleChange}  >
+                                        <option>Select</option>
+                                        <option value="+1" >Male</option>
+                                        <option value="+2">Female</option>
+                                        <option value="+3">Female</option>
+                                        <option value="+4">Female</option>
+                                        <option value="trace">trace</option>
+                                        <option value="nil">nil</option>
+                                    </select>
                                 </div>
                                 <div className="fields-all2">
                                     <label>Sugar</label>
-                                    <input type="number" min="0" 
-        max="100" step="0.1" name="Sugar" onChange={handleChange}/>
+                                    <select className="select-option"  name="sugar" onChange={handleChange}  >
+                                        <option>Select</option>
+                                        <option value="+1" >Male</option>
+                                        <option value="+2">Female</option>
+                                        <option value="+3">Female</option>
+                                        <option value="+4">Female</option>
+                                        <option value="trace">trace</option>
+                                        <option value="nil">nil</option>
+                                    </select>
                                 </div>
                                 <div className="fields-all2">
                                     <label>Pus Cell</label>
-                                    <input type="number" min="0" 
-        max="100" step="0.1" name="Pus_Cell" onChange={handleChange}/>
+                                    <select className="select-option"  name="Albumin_urine" onChange={handleChange}  >
+                                        <option>Select</option>
+                                        <option value="2-3" >2-3</option>
+                                        <option value="5-10">5-10</option>
+                                        <option value="10-15">10-15</option>
+                                        <option value="15-20">15-20</option>
+                                    </select>
                                 </div>
                                 <div className="fields-all2">
                                     <label>Epithelial Cell</label>
@@ -398,9 +418,14 @@ const Form = () => {
         max="100" step="0.1" name="Epithelial_Cell" onChange={handleChange}/>
                                 </div>
                                 <div className="fields-all2">
-                                    <label>RBC Crystal</label>
+                                    <label>RBC</label>
                                     <input type="number" min="0" 
-        max="100" step="0.1" name="RBC_Crystal" onChange={handleChange}/>
+        max="100" step="0.1" name="RBCC" onChange={handleChange}/>
+                                </div>
+                                <div className="fields-all2">
+                                    <label>Crystal</label>
+                                    <input type="number" min="0" 
+        max="100" step="0.1" name="Crystal" onChange={handleChange}/>
                                 </div>
                             </div>
                         </div>
@@ -432,11 +457,11 @@ const Form = () => {
                                     <input type="number" min="0" 
         max="100" step="0.1" name="HABC" onChange={handleChange}/>
                                 </div>
-                                <div className="fields-all2">
+                                {/* <div className="fields-all2">
                                     <label>CPR</label>
                                     <input type="number" min="0" 
         max="100" step="0.1" name="CPR" onChange={handleChange}/>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
