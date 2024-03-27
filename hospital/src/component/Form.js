@@ -471,7 +471,7 @@ const Form = () => {
                             
                                 <div className="fields-all">
                                     <label>Doctor Name</label>
-                                    <input type="number" name="doc_name" onChange={handleChange}/>
+                                    <input type="text" name="doc_name" onChange={handleChange}/>
                                 </div>
                             </div>
                         </div>
