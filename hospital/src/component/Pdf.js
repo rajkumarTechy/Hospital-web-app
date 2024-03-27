@@ -87,7 +87,7 @@ const Pdf = () => {
         }, 100);
 
 
-        navigate('/')
+        navigate('/form')
         
     }
     
