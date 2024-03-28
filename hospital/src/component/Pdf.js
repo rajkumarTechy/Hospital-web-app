@@ -633,14 +633,14 @@ const Pdf = () => {
                 </table>
             </div>
             <div className='last-last'>
-                <div className="more-info">
+                {/* <div className="more-info">
                     <h4>Instruments: <span>Fully automated cell counter</span></h4>
                     <h4>Interpretation: <span>Further confirm for Anemia</span></h4>
-                </div>
-                {/* <div className="end">
+                </div> */}
+                <div className="end">
                     <h4>Thanks for Reference</h4>
                     <h4>****End of Report****</h4>
-                </div> */}
+                </div>
                 <div className="signature">
                     <div className="doc-sign">
                         <h4>Authorised Signature</h4>

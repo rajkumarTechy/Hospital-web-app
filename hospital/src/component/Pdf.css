@@ -291,7 +291,7 @@
 
 .signature{
     width: 95%;
-    margin-top: 5%;
+    margin-top: 8%;
     text-align: right;
     padding: 10px;
     border-bottom: 1px solid #ccc;
@@ -325,6 +325,7 @@
     flex-direction: column;
     width: 95%;
     page-break-after: always;
+    margin-top: 5px;
 }
 
 .download-btn{
