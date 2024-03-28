@@ -291,7 +291,7 @@
 }
 
 .signature{
-    width: 95%;
+    width: 100%;
     margin-top: 8%;
     text-align: right;
     padding: 10px;
@@ -312,7 +312,7 @@
 
 .last{
     text-align: right;
-    width: 95%;
+    width: 100%;
     padding: 15px;
 }
 
