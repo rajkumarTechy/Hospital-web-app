@@ -291,7 +291,7 @@ const Pdf = () => {
                             <tr>
                                 <td>Pus Cell</td>
                                 <td>{formData.Pus_Cell}</td>
-                                <td>10 - 15</td>
+                                <td>&lt;5</td>
                                 <td>HPF</td>
                             </tr>
                         )}
