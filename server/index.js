@@ -107,7 +107,7 @@ app.post('/login', (req,res)=>{
 })
 
 app.post('/reports', (req, res)=>{
-    const sql = "INSERT INTO `patientreports`(`names`, `age`, `gender`, `contact`, `WBC`, `RBC`, `Hemoglobin`, `MCV`, `MCH`, `Haemotocrit`, `MCHC`, `RDW`, `Paltelet`, `MPV`, `Neutrophils`, `Lymphocytes`, `Monocytes`, `Sodium`, `Pottasium`, `Chloride`, `Bicarbonate`, `Calcium`, `Phosphorus`, `Total_Bilirubin`, `Direct_Bilirubin`, `Indirect_Bilirubin`, `SGOT`, `SGPT`, `Alkaline_Phosphate`, `Total_Protein`, `Albumin`, `Globumin`, `Total_Cholestrol`, `Triglycerides`, `LDL_Cholestrol`, `HDL_Cholestrol`, `Non_HDL_Cholestrol`, `VLDL_Cholestrol`, `Albumin_urine`, `Sugar`, `Pus_Cell`, `Epithelial_Cell`, `RBCC`, `Crystal` `Fasting_Blood_Sugar`, `Post_Prandial_Blood`, `Random_Blood_Sugar`, `HABC`, `Blood_Area`, `Serum_Creatinine`, `Serum_Uricacid`,`doc_name`) VALUES (?)"
+    const sql = "INSERT INTO `patientreports`(`names`, `age`, `gender`, `contact`, `WBC`, `RBC`, `Hemoglobin`, `MCV`, `MCH`, `Haemotocrit`, `MCHC`, `RDW`, `Paltelet`, `MPV`, `Neutrophils`, `Lymphocytes`, `Monocytes`, `Sodium`, `Pottasium`, `Chloride`, `Bicarbonate`, `Calcium`, `Phosphorus`, `Total_Bilirubin`, `Direct_Bilirubin`, `Indirect_Bilirubin`, `SGOT`, `SGPT`, `Alkaline_Phosphate`, `Total_Protein`, `Albumin`, `Globumin`, `Total_Cholestrol`, `Triglycerides`, `LDL_Cholestrol`, `HDL_Cholestrol`, `Non_HDL_Cholestrol`, `VLDL_Cholestrol`, `Albumin_urine`, `Sugar`, `Pus_Cell`, `Epithelial_Cell`, `RBCC`, `Crystal`, `Fasting_Blood_Sugar`, `Post_Prandial_Blood`, `Random_Blood_Sugar`, `HABC`, `Blood_Area`, `Serum_Creatinine`, `Serum_Uricacid`,`doc_name`) VALUES (?)"
 
     const values = [
         req.body.names, req.body.age, req.body.gender, req.body.contact,
