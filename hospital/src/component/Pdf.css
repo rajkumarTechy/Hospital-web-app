@@ -149,7 +149,8 @@
 .patient-main .collect-detail{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     border-right: 1px solid #ccc;
     padding-right: 100px;
 }
