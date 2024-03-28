@@ -391,7 +391,7 @@ const Pdf = () => {
                             <td>mg/dl</td>
                         </tr>} 
                         {formData.HABC  && <tr>
-                            <td>H b A,C</td>
+                            <td>HBA1C</td>
                             <td>{formData.HABC}</td>
                             <td className="result-column">
                                 <h4 className="result-indicator" style={{color: "darkred"}}>{(() => {
