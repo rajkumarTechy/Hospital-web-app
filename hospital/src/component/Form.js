@@ -380,7 +380,7 @@ const Form = () => {
                             
                                 <div className="fields-all2">
                                     <label>Albumin</label>
-                                    <select className="select-option"  name="Albumin_urine" onChange={handleChange}  >
+                                    <select className="select-option2"  name="Albumin_urine" onChange={handleChange}  >
                                         <option>Select</option>
                                         <option value="+1" >+1</option>
                                         <option value="+2">+2</option>
@@ -392,7 +392,7 @@ const Form = () => {
                                 </div>
                                 <div className="fields-all2">
                                     <label>Sugar</label>
-                                    <select className="select-option"  name="Sugar" onChange={handleChange}  >
+                                    <select className="select-option2"  name="Sugar" onChange={handleChange}  >
                                         <option>Select</option>
                                         <option value="+1" >+1</option>
                                         <option value="+2">+2</option>
@@ -404,7 +404,7 @@ const Form = () => {
                                 </div>
                                 <div className="fields-all2">
                                     <label>Pus Cell</label>
-                                    <select className="select-option"  name="Pus_Cell" onChange={handleChange}  >
+                                    <select className="select-option2"  name="Pus_Cell" onChange={handleChange}  >
                                         <option>Select</option>
                                         <option value="2-3" >2-3</option>
                                         <option value="5-10">5-10</option>

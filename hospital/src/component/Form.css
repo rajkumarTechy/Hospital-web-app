@@ -91,6 +91,14 @@
     border: 1px solid #134978;
 }
 
+.select-option2{
+    padding: 10px;
+    outline: none;
+    border: 1px solid #bbb;
+    background-color: #f2f2f2;
+    border-radius: 2px;
+}
+
 .report-fields {
     display: grid;
     grid-template: repeat(auto-fill, minmax(100px, 1fr))/repeat(4,1fr);
