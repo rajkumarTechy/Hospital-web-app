@@ -337,7 +337,7 @@ const Pdf = () => {
                                         return ""
                                     }
                                 })()}</h4> */}
-                                &lt;200
+                                &lt;126
                                 {/* <span className="result-value">{(() => {
                                     if (formData.Fasting_Blood_Sugar >= 70 && formData.Fasting_Blood_Sugar <=99) {
                                         return "70 - 99";
