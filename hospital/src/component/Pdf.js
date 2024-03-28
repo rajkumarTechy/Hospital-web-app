@@ -233,7 +233,7 @@ const Pdf = () => {
                                 <td>Platelet Count</td>
                                 <td>{formData.Paltelet}</td>
                                 <td>1.5 - 4</td>
-                                <td>laks</td>
+                                <td>mcL</td>
                             </tr>
                         )}
                         {formData.MPV && (
