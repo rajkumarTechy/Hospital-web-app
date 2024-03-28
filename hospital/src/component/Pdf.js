@@ -131,8 +131,8 @@ const Pdf = () => {
                     <h5 >PID : {latestPid}</h5>
                 </div>
                 <div className="collect-detail">
-                    <h3>Sample Collected At:</h3>
-                    <h4>Sri Krishna Diagnostics</h4>
+                    {/* <h3>Sample Collected At:</h3>
+                    <h4>Sri Krishna Diagnostics</h4> */}
                     <h2>Ref. By :<b>{formData.doc_name}</b></h2>
                 </div>
                 <div className="date">

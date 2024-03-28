@@ -165,7 +165,7 @@ const Form = () => {
                                 <div className="fields-all2">
                                     <label>Total Count(wbc)</label>
                                     <input type="number" min="0" 
-        max="100000" step="0.1" name="WBC" onChange={handleChange} />
+        max="1000000" step="0.1" name="WBC" onChange={handleChange} />
                                 </div>
                                 <div className="fields-all2">
                                     <label>Red Blood Cell</label>
@@ -205,7 +205,7 @@ const Form = () => {
                                 <div className="fields-all2">
                                     <label>Paltelet Count</label>
                                     <input type="number" min="0" 
-        max="100000" step="0.1" name="Paltelet" onChange={handleChange}/>
+        max="1000000" step="0.1" name="Paltelet" onChange={handleChange}/>
                                 </div>
                                 <div className="fields-all2">
                                     <label>Mean Platelet Volume(MPV)</label>
@@ -382,10 +382,10 @@ const Form = () => {
                                     <label>Albumin</label>
                                     <select className="select-option2"  name="Albumin_urine" onChange={handleChange}  >
                                         <option>Select</option>
-                                        <option value="+1" >+1</option>
-                                        <option value="+2">+2</option>
-                                        <option value="+3">+3</option>
-                                        <option value="+4">+4</option>
+                                        <option value="1+">1+</option>
+                                        <option value="2+">2+</option>
+                                        <option value="3+">3+</option>
+                                        <option value="4+">4+</option>
                                         <option value="trace">trace</option>
                                         <option value="nil">nil</option>
                                     </select>
@@ -394,23 +394,17 @@ const Form = () => {
                                     <label>Sugar</label>
                                     <select className="select-option2"  name="Sugar" onChange={handleChange}  >
                                         <option>Select</option>
-                                        <option value="+1" >+1</option>
-                                        <option value="+2">+2</option>
-                                        <option value="+3">+3</option>
-                                        <option value="+4">+4</option>
+                                        <option value="1+">1+</option>
+                                        <option value="2+">2+</option>
+                                        <option value="3+">3+</option>
+                                        <option value="4+">4+</option>
                                         <option value="trace">trace</option>
                                         <option value="nil">nil</option>
                                     </select>
                                 </div>
                                 <div className="fields-all2">
                                     <label>Pus Cell</label>
-                                    <select className="select-option2"  name="Pus_Cell" onChange={handleChange}  >
-                                        <option>Select</option>
-                                        <option value="2-3" >2-3</option>
-                                        <option value="5-10">5-10</option>
-                                        <option value="10-15">10-15</option>
-                                        <option value="15-20">15-20</option>
-                                    </select>
+                                    <input type="text"  name="Pus_Cell" onChange={handleChange}/>
                                 </div>
 
                                 <div className="fields-all2">
