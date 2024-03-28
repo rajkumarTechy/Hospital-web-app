@@ -57,9 +57,9 @@ const Form = () => {
         VLDL_Cholestrol:null,
 
         // Urine Analysis
-        Albumin_urine:null,
-        Sugar:null,
-        Pus_Cell:null,
+        Albumin_urine:'',
+        Sugar:'',
+        Pus_Cell:'',
         Epithelial_Cell:null,
         RBCC:null,
         Crystal:null,
