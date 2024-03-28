@@ -327,7 +327,7 @@
     flex-direction: column;
     width: 95%;
     page-break-after: always;
-    margin-top: 5px;
+    margin-top: 10px;
     border-top: 1px solid #ccc;
 }
 
