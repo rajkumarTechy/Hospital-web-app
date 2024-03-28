@@ -283,7 +283,6 @@
     width: 95%;
     margin-top: 5px;
     padding-top: 5px;
-    border-top: 1px solid #ccc;
 }
 
 .end h4{
@@ -327,7 +326,7 @@
     flex-direction: column;
     width: 95%;
     page-break-after: always;
-    margin-top: 5px;
+    border-top: 1px solid #ccc;
 }
 
 .download-btn{

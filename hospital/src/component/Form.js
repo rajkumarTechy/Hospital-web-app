@@ -496,7 +496,7 @@ const Form = () => {
                             <div className="report-fields">
                             
                                 <div className="fields-all">
-                                    <label>Doctor Name</label>
+                                    <label>Doctor Name<span className='red'>*</span></label>
                                     <input type="text" name="doc_name" onChange={handleChange} required/>
                                 </div>
                             </div>
