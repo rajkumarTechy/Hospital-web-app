@@ -61,7 +61,7 @@ const Form = () => {
         Sugar:'',
         Pus_Cell:'',
         Epithelial_Cell:null,
-        RBCC:null,
+        RBCC:'',
         Crystal:null,
 
         // Diabetes Profile
@@ -414,8 +414,7 @@ const Form = () => {
                                 </div>
                                 <div className="fields-all2">
                                     <label>RBC</label>
-                                    <input type="number" min="0" 
-        max="5000" step="0.1" name="RBCC" onChange={handleChange}/>
+                                    <input type="text" name="RBCC" onChange={handleChange}/>
                                 </div>
                                 <div className="fields-all2">
                                     <label>Crystal</label>
