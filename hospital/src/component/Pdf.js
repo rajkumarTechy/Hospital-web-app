@@ -248,7 +248,7 @@ const Pdf = () => {
                             <tr>
                                 <td>Neutrophils</td>
                                 <td>{formData.Neutrophils}</td>
-                                <td>2 - 8 x10<sup>9</sup></td>
+                                <td>50 - 70</td>
                                 <td>%</td>
                             </tr>
                         )}
@@ -256,7 +256,7 @@ const Pdf = () => {
                             <tr>
                                 <td>Lymphocytes</td>
                                 <td>{formData.Lymphocytes}</td>
-                                <td>1 - 4 x10<sup>9</sup></td>
+                                <td>25 - 35</td>
                                 <td>%</td>
                             </tr>
                         )}
@@ -264,7 +264,7 @@ const Pdf = () => {
                             <tr>
                                 <td>Monocytes</td>
                                 <td>{formData.Monocytes}</td>
-                                <td>0 - 1.0 x10<sup>9</sup></td>
+                                <td>4 - 6</td>
                                 <td>%</td>
                             </tr>
                         )} 
@@ -325,7 +325,7 @@ const Pdf = () => {
                         {formData.Fasting_Blood_Sugar && <tr>
                             <td>Fasting Blood Sugar(FBS)</td>
                             <td>{formData.Fasting_Blood_Sugar}</td>
-                            <td className="result-column">
+                            <td >
                                 {/* <h4 className="result-indicator" style={{color: "darkred"}}>{(() => {
                                     if (formData.Fasting_Blood_Sugar >= 70 && formData.Fasting_Blood_Sugar <=90) {
                                         return "Normal";
@@ -337,17 +337,18 @@ const Pdf = () => {
                                         return ""
                                     }
                                 })()}</h4> */}
-                                <span className="result-value">{(() => {
+                                &lt;200
+                                {/* <span className="result-value">{(() => {
                                     if (formData.Fasting_Blood_Sugar >= 70 && formData.Fasting_Blood_Sugar <=99) {
                                         return "70 - 99";
                                     }  else if(formData.Fasting_Blood_Sugar >= 100 && formData.Fasting_Blood_Sugar <=126) {
                                         return "100 - 126";
                                     } else if(formData.Fasting_Blood_Sugar > 126){
-                                        return ">126"
+                                        return "<126"
                                     }else{
                                         return "-"
                                     }
-                                })()}</span>
+                                })()}</span> */}
                                 
                             </td> 
                             <td>mg/dl</td>
@@ -355,7 +356,7 @@ const Pdf = () => {
                         {formData.Post_Prandial_Blood && <tr>
                             <td>Post-Prandial Blood Sugar (PPBS)</td>
                             <td>{formData.Post_Prandial_Blood}</td>
-                            <td className="result-column">
+                            <td>
                                 {/* <h4 className="result-indicator" style={{color: "darkred"}}>{(() => {
                                     if (formData.Post_Prandial_Blood >= 100 && formData.Post_Prandial_Blood <=140) {
                                         return "Normal";
@@ -367,17 +368,18 @@ const Pdf = () => {
                                         return ""
                                     }
                                 })()}</h4> */}
-                                <span className="result-value">{(() => {
+                                &lt;200
+                                {/* <span className="result-value">{(() => {
                                     if (formData.Post_Prandial_Blood >= 100 && formData.Post_Prandial_Blood <=140) {
                                         return "100 - 140";
                                     }  else if(formData.Post_Prandial_Blood >= 140 && formData.Post_Prandial_Blood <=199) {
                                         return "140 - 199";
                                     } else if(formData.Post_Prandial_Blood > 200){
-                                        return ">200";
+                                        return "<200";
                                     }else{
                                         return "-";
                                     }
-                                })()}</span>
+                                })()}</span> */}
 
                             </td> 
                             <td>mg/dl</td>
