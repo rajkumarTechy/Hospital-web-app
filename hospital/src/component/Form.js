@@ -60,9 +60,9 @@ const Form = () => {
         Albumin_urine:'',
         Sugar:'',
         Pus_Cell:'',
-        Epithelial_Cell:null,
+        Epithelial_Cell:'',
         RBCC:'',
-        Crystal:null,
+        Crystal:'',
 
         // Diabetes Profile
         Fasting_Blood_Sugar:null,
@@ -409,8 +409,7 @@ const Form = () => {
 
                                 <div className="fields-all2">
                                     <label>Epithelial Cell</label>
-                                    <input type="number" min="0" 
-        max="5000" step="0.1" name="Epithelial_Cell" onChange={handleChange}/>
+                                    <input type="text"  name="Epithelial_Cell" onChange={handleChange}/>
                                 </div>
                                 <div className="fields-all2">
                                     <label>RBC</label>
@@ -418,8 +417,7 @@ const Form = () => {
                                 </div>
                                 <div className="fields-all2">
                                     <label>Crystal</label>
-                                    <input type="number" min="0" 
-        max="5000" step="0.1" name="Crystal" onChange={handleChange}/>
+                                    <input type="text"  name="Crystal" onChange={handleChange}/>
                                 </div>
                             </div>
                         </div>
