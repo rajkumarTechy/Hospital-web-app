@@ -128,6 +128,7 @@ const Pdf = () => {
                     <h2>{formData.names}</h2>
                     <h5>Age : {formData.age}</h5>
                     <h5>Gender : {formData.gender}</h5>
+                    <h5>Ph.no : {formData.contact}</h5>
                     <h5 >PID : {latestPid}</h5>
                 </div>
                 <div className="collect-detail">
