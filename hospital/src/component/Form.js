@@ -387,8 +387,8 @@ const Form = () => {
                                         <option value="2+">2+</option>
                                         <option value="3+">3+</option>
                                         <option value="4+">4+</option>
-                                        <option value="trace">trace</option>
-                                        <option value="nil">nil</option>
+                                        <option value="Trace">Trace</option>
+                                        <option value="Nil">Nil</option>
                                     </select>
                                 </div>
                                 <div className="fields-all2">
@@ -399,8 +399,8 @@ const Form = () => {
                                         <option value="2+">2+</option>
                                         <option value="3+">3+</option>
                                         <option value="4+">4+</option>
-                                        <option value="trace">trace</option>
-                                        <option value="nil">nil</option>
+                                        <option value="Trace">Trace</option>
+                                        <option value="Nil">Nil</option>
                                     </select>
                                 </div>
                                 <div className="fields-all2">
@@ -492,7 +492,7 @@ const Form = () => {
                                     <input type="text" name="doc_name" onChange={handleChange} required/>
                                 </div>
                                 <div className="fields-all">
-                                    <label>Date and Time<span className='red'>*</span></label>
+                                    <label>Collected Date&Time<span className='red'>*</span></label>
                                     <input type="datetime-local" name="coll_date" onChange={handleChange} required/>
                                 </div>
                             </div>
