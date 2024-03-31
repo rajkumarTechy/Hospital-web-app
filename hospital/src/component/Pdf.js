@@ -210,7 +210,7 @@ const Pdf = () => {
                                 <td>MCHC</td>
                                 <td>{formData.MCHC}</td>
                                 <td>32 - 36</td>
-                                <td>%</td>
+                                <td>g/dL</td>
                             </tr>
                         )}
                         {formData.Haemotocrit && (
@@ -226,7 +226,7 @@ const Pdf = () => {
                                 <td>RDW</td>
                                 <td>{formData.RDW}</td>
                                 <td>11 - 15</td>
-                                <td>cumm</td>
+                                <td>fL</td>
                             </tr>
                         )}
                         {formData.Paltelet && (
@@ -234,7 +234,7 @@ const Pdf = () => {
                                 <td>Platelet Count</td>
                                 <td>{formData.Paltelet}</td>
                                 <td>1.5 - 4</td>
-                                <td>mcL</td>
+                                <td>lakhs</td>
                             </tr>
                         )}
                         {formData.MPV && (
@@ -570,13 +570,7 @@ const Pdf = () => {
                         {formData.Total_Cholestrol && <tr>
                             <td>Total Cholestrol</td>
                             <td>{formData.Total_Cholestrol}</td>
-                            <td>{(() => {
-                                    if (formData.age <= 19) {
-                                        return "125-200";
-                                    }  else {
-                                        return "<170";
-                                    }
-                                })()}</td> 
+                            <td>&lt;200</td> 
                             <td>mg/dl</td>
                         </tr> }
                         {formData.Triglycerides && <tr>
