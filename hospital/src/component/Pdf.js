@@ -65,7 +65,7 @@ const Pdf = () => {
 
     const renel = formData.Blood_Area || formData.Serum_Creatinine || formData.Serum_Uricacid;
 
-    const Serology = formData.CPR;
+    const Serology = formData.CRP;
 
     const result = formData.Total_Cholestrol / formData.HDL_Cholestrol;
     const roundedResult = result.toFixed(2);
