@@ -91,7 +91,7 @@
 }
 
 .contact .cont-detail h3{
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -143,16 +143,12 @@
     justify-content: space-evenly;
     text-align: left;
     gap: 5px;
-    border-right: 1px solid #ccc;
-    padding-right: 100px;
 }
 .patient-main .collect-detail{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid #ccc;
-    padding-right: 100px;
 }
 .patient-main .patient-detail h2{
     font-size: 16px;
@@ -280,7 +276,6 @@
 .end{
     display: flex;
     gap: 30%;
-    text-align: left;
     width: 95%;
     margin-top: 5px;
     padding-top: 5px;
@@ -325,6 +320,7 @@
 .last-last{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 95%;
     page-break-after: always;
     margin-top: 10px;
@@ -351,5 +347,12 @@
     color: #134978;
     border: 1px solid #134978;
 }
+.vertical-line {
+    border: 1px solid #ccc; 
+    height: auto;  
+}
 
-
+.vertical-line2 {
+    border: 1px solid black; 
+    height: auto;  
+}

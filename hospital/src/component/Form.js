@@ -77,7 +77,8 @@ const Form = () => {
         Serum_Uricacid:null,
 
         //doc name
-        doc_name:''
+        doc_name:'',
+        coll_date:''
 
 
     });
@@ -489,6 +490,10 @@ const Form = () => {
                                 <div className="fields-all">
                                     <label>Doctor Name<span className='red'>*</span></label>
                                     <input type="text" name="doc_name" onChange={handleChange} required/>
+                                </div>
+                                <div className="fields-all">
+                                    <label>Date and Time<span className='red'>*</span></label>
+                                    <input type="datetime-local" name="coll_date" onChange={handleChange} required/>
                                 </div>
                             </div>
                         </div>

@@ -48,6 +48,9 @@ const Pdf = () => {
 
     const{formData} = state;
 
+    const collDate2 = new Date(formData.coll_date);
+    const collDate = `${(collDate2.getMonth() + 1)}/${collDate2.getDate()}/${collDate2.getFullYear()}, ${collDate2.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })}`;
+
     const Complete_bld_ct = formData.WBC || formData.RBC || formData.Hemoglobin || formData.MCV || formData.MCH || formData.Haemotocrit || formData.MCHC || formData.RDW || formData.Paltelet || formData.MPV || formData.Neutrophils || formData.Lymphocytes || formData.Monocytes;
 
     const Electrolyte = formData.Sodium || formData.Pottasium || formData.Chloride || formData.Bicarbonate || formData.Calcium || formData.Phosphorus;
@@ -103,7 +106,9 @@ const Pdf = () => {
                     <h1>SRI KRISHNA <span>DIAGNOSTICS</span></h1>
                     <ul>
                         <li>Accurate</li>
+                        <div className="vertical-line2"></div> {/* Vertical line */}
                         <li>Caring</li>
+                        <div className="vertical-line2"></div> {/* Vertical line */}
                         <li>Instant</li>
                     </ul>
                     <h4>95A, Ettayapuram Road, kovilpatti-628501</h4>
@@ -131,14 +136,16 @@ const Pdf = () => {
                     <h5>Ph.no : {formData.contact}</h5>
                     <h5 >PID : {latestPid}</h5>
                 </div>
+                <div className="vertical-line"></div> {/* Vertical line */}
                 <div className="collect-detail">
                     {/* <h3>Sample Collected At:</h3>
                     <h4>Sri Krishna Diagnostics</h4> */}
-                    <h2>Ref. By :<b>{formData.doc_name}</b></h2>
+                    <h2>Ref. By : <b>{formData.doc_name}</b></h2>
                 </div>
+                <div className="vertical-line"></div> {/* Vertical line */}
                 <div className="date">
-                    {/* <h5>Collected On :{formattedDateTime}</h5> */}
-                    <h5>Dispatched On :{formattedDateTime}</h5>
+                    <h5><b>Collected On :</b> {collDate}</h5>
+                    <h5><b>Dispatched On :</b> {formattedDateTime}</h5>
                 </div>
             </div>
             <div className="main-table">
