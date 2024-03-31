@@ -450,7 +450,7 @@ const Pdf = () => {
                         )}
                         {formData.Serum_Uricacid && (
                             <tr>
-                                <td>Serum Uricacid</td>
+                                <td>Serum Uric acid</td>
                                 <td>{formData.Serum_Uricacid}</td>
                                 <td>{(() => {
                                         if (formData.gender === "Male") {

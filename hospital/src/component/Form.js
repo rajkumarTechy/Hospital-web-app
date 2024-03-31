@@ -474,7 +474,7 @@ const Form = () => {
         max="5000" step="0.1"name="Serum_Creatinine" onChange={handleChange}/>
                                 </div>
                                 <div className="fields-all">
-                                    <label>Serum Uricacid</label>
+                                    <label>Serum Uric acid</label>
                                     <input type="number" min="0" 
         max="5000" step="0.1"name="Serum_Uricacid" onChange={handleChange}/>
                                 </div>
