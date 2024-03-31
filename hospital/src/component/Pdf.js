@@ -49,7 +49,7 @@ const Pdf = () => {
     const{formData} = state;
 
     const collDate2 = new Date(formData.coll_date);
-    const collDate = `${collDate2.getDate()}/${collDate2.getMonth() + 1}/${collDate2.getFullYear()}, ${collDate.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })}`;
+    const collDate = `${collDate2.getDate()}/${collDate2.getMonth() + 1}/${collDate2.getFullYear()}, ${collDate2.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })}`;
 
     const Complete_bld_ct = formData.WBC || formData.RBC || formData.Hemoglobin || formData.MCV || formData.MCH || formData.Haemotocrit || formData.MCHC || formData.RDW || formData.Paltelet || formData.MPV || formData.Neutrophils || formData.Lymphocytes || formData.Monocytes;
 
