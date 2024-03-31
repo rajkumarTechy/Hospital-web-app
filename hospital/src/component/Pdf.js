@@ -65,6 +65,11 @@ const Pdf = () => {
 
     const renel = formData.Blood_Area || formData.Serum_Creatinine || formData.Serum_Uricacid;
 
+    const Serology = formData.CPR;
+
+    const result = formData.Total_Cholestrol / formData.HDL_Cholestrol;
+    const roundedResult = result.toFixed(2);
+
 
     const handlePrint = (fileName) => {
         const pdfs = document.querySelector('.main-frame');
@@ -566,11 +571,18 @@ const Pdf = () => {
                             <td>2 - 3.5</td> 
                             <td>gm/dl</td>
                         </tr> }
-                        {/* {lvr_function && <tr>
-                            <td>Albumin<strong>:</strong>Globumin Ratio</td>
-                            <td colSpan={3}>1.2 - 1.5</td>
-                            
-                        </tr> } */}
+
+                        {Serology && <tr className="head-div">
+                            <th colspan="4">Serology</th>
+                        </tr>}
+                        {formData.CRP && <tr>
+                            <td>CRP</td>
+                            <td>{formData.CRP}</td>
+                            <td>&lt;0.1</td> 
+                            <td>mg/dL</td>
+                        </tr> }
+
+
                         {Lipid && <tr className="head-div">
                             <th colspan="4">Lipid Profile</th>
                         </tr>}
@@ -630,7 +642,9 @@ const Pdf = () => {
                         </tr>}
                         {Lipid && <tr>
                             <td>Cholestrol <strong>:</strong> HDL Ratio</td>
-                            <td colSpan={3}>&lt;6</td>
+                            <td>{roundedResult}</td>
+                            <td>&lt;6</td>
+                            <td>-</td>
                             
                         </tr> }
                     </tbody>

@@ -76,6 +76,9 @@ const Form = () => {
         Serum_Creatinine:null,
         Serum_Uricacid:null,
 
+        //Serology
+        CRP:null,
+
         //doc name
         doc_name:'',
         coll_date:''
@@ -455,6 +458,20 @@ const Form = () => {
                                     <input type="number" min="0" 
         max="5000" step="0.01" name="CPR" onChange={handleChange}/>
                                 </div> */}
+                            </div>
+                        </div>
+
+                        <div className="reports2">
+                            <div className="txt-field2">
+                                <h4>Serology</h4>
+                            </div>
+                            <div className="report-fields2">
+                            
+                                <div className="fields-all2">
+                                    <label>CRP</label>
+                                    <input type="number" min="0" 
+        max="5000" step="0.01"name="CRP" onChange={handleChange}/>
+                                </div>
                             </div>
                         </div>
 
