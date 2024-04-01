@@ -54,7 +54,7 @@ const Header = () => {
                     <h5>95A, Ettayapuram Road, kovilpatti-628501</h5>
                 </div>
             </div>
-            {/* {auth ? 
+            {auth ? (
             
             
             <div className="nav-bar">
@@ -62,13 +62,13 @@ const Header = () => {
               <NavLink to='/' onClick={handleLogout}><h4>Logout</h4><FontAwesomeIcon className='icon' icon={faRightFromBracket} /></NavLink>
             </div>
             
-            :
+            ):(
             <div className="nav-bar">
                 
                 <NavLink to='/login'><h4>login</h4><FontAwesomeIcon className='icon' icon={faUser} /></NavLink>
             </div>
               
-          } */}
+          )}
         </div>
     </div>
   )

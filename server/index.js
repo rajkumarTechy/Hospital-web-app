@@ -59,7 +59,7 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
   })
 
-app.get('/', verifyUser, (req,res)=>{
+  app.get('/protected', verifyUser, (req,res)=>{
 
     return res.json({Status:"Success", name:req.name})
 
@@ -134,27 +134,6 @@ app.delete('/delete/:id', (req, res) => {
         return res.json(result);
     });
 });
-
-
-const storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-     return cb(null, "./public/uploads") 
-    },
-    filename: function (req, file, cb) {
-      
-      return cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname));
-    }
-  });
-  
-
-  const upload = multer({ storage });
-  
-
-  app.post('/upload', upload.single('pdfFile'), (req, res) => {
-    
-    res.send('File uploaded successfully!');
-  });
-
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
