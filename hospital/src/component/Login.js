@@ -21,9 +21,9 @@ const Login = () => {
         axios.post('https://hospital-web-app-aqvg.vercel.app/login', values)
             .then(res => {
                 if (res.data.Status === "Success") {
-                   
+                    localStorage.setItem('token', res.data.token);
                     navigate('/');
-                    // window.location.reload(true);
+                    window.location.reload(true);
                 } else {
                     toast.error(res.data.Message);
                 }
