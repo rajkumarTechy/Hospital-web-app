@@ -42,7 +42,7 @@ const verifyUser = (req,res,next) =>{
     if(!token){
         return res.json({Message:"Provide Token"})
     }else{
-        jwt.verify(token,"our-jsonwebtoken-secret-key", (err, decoded) => {
+        jwt.verify(token,process.env.JWT_SECRET_KEY, (err, decoded) => {
             if(err){
             return res.json({Message:"Authentication Error."})
         }else{
@@ -97,7 +97,7 @@ app.post('/login', (req,res)=>{
         if(err) return res.json({Message:"Server Side Error"});
         if(data.length > 0){
             const name = data[0].username
-            const token = jwt.sign({ name }, "our-jsonwebtoken-secret-key", { expiresIn: '1h' });
+            const token = jwt.sign({ name }, process.env.JWT_SECRET_KEY, { expiresIn: '1h' });
             res.cookie('token',token);
             return res.json({Status:"Success"})
         }else{
