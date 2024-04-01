@@ -23,7 +23,7 @@ const Login = () => {
                 if (res.data.Status === "Success") {
                    
                     navigate('/');
-                    window.location.reload(true);
+                    // window.location.reload(true);
                 } else {
                     toast.error(res.data.Message);
                 }
