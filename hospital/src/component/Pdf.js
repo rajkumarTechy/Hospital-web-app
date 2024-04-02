@@ -578,7 +578,7 @@ const Pdf = () => {
                         {formData.CRP && <tr>
                             <td>CRP</td>
                             <td>{formData.CRP}</td>
-                            <td>&lt;0.1</td> 
+                            <td>&lt;1</td> 
                             <td>mg/dL</td>
                         </tr> }
 
