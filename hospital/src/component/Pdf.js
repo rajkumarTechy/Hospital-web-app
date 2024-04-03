@@ -14,7 +14,8 @@ const Pdf = () => {
 
     const [currentDateTime] = useState(new Date());
     const [latestPid, setLatestPid] = useState([]);
-    const formattedDateTime = currentDateTime.toLocaleString();
+
+    const formattedDateTime = `${currentDateTime.getDate()}/${currentDateTime.getMonth() + 1}/${currentDateTime.getFullYear()}, ${currentDateTime.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })}`;
 
     const navigate = useNavigate()
 
