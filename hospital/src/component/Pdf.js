@@ -566,7 +566,7 @@ const Pdf = () => {
                             <td>gm/dl</td>
                         </tr>}
                         {formData.Globumin && <tr>
-                            <td>Globumin</td>
+                            <td>Globulin</td>
                             <td>{formData.Globumin}</td>
                             <td>2 - 3.5</td> 
                             <td>gm/dl</td>

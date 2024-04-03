@@ -325,7 +325,7 @@ const Form = () => {
         max="5000" step="0.01"name="Albumin" onChange={handleChange}/>
                                 </div>
                                 <div className="fields-all2">
-                                    <label>Globumin</label>
+                                    <label>Globulin</label>
                                     <input type="number" min="0" 
         max="5000" step="0.01"name="Globumin" onChange={handleChange}/>
                                 </div>
