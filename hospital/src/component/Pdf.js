@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Pdf.css'
 import html2pdf from 'html2pdf.js/dist/html2pdf.min';
-import axios from 'axios'
+import axios from 'axios' 
 
 
 import logo from './logo.png'
