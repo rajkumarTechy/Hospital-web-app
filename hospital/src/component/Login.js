@@ -4,9 +4,10 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'wc-toast';
 
+axios.defaults.withCredentials = true;
 const Login = () => {
     const navigate = useNavigate();
-    axios.defaults.withCredentials = true;
+    
 
     const [values, setValues] = useState({
         username: '',
