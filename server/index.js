@@ -97,8 +97,13 @@ app.post('/login', (req,res)=>{
         if(err) return res.json({Message:"Server Side Error"});
         if(data.length > 0){
             const name = data[0].username
-            const token = jwt.sign({ name }, process.env.JWT_SECRET_KEY, { expiresIn: '1h' });
-            res.cookie('token',token);
+            const token = jwt.sign({ name }, process.env.JWT_SECRET_KEY, { expiresIn: '1d' });
+            res.cookie('token', token, {
+                httpOnly: true, 
+                secure: true, 
+                sameSite: 'strict' 
+            });
+            
             return res.json({Status:"Success"})
         }else{
             return res.json({Message:"Invalid Username or Password"})
@@ -125,15 +130,15 @@ app.post('/reports', (req, res)=>{
 })
 
 
-app.delete('/delete/:id', (req, res) => {
-    const sql = "DELETE FROM patientreports WHERE id = ?";
-    const id = req.params.id;
+// app.delete('/delete/:id', (req, res) => {
+//     const sql = "DELETE FROM patientreports WHERE id = ?";
+//     const id = req.params.id;
 
-    db.query(sql, [id], (err, result) => {
-        if (err) return res.json({ Message: "Server side error" });
-        return res.json(result);
-    });
-});
+//     db.query(sql, [id], (err, result) => {
+//         if (err) return res.json({ Message: "Server side error" });
+//         return res.json(result);
+//     });
+// });
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
