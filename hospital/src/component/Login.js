@@ -21,9 +21,8 @@ const Login = () => {
         axios.post('https://hospital-web-app-2j3t.vercel.app/login', values)
             .then(res => {
                 if (res.data.Status === "Success") {
-      
                     navigate('/');
-   
+
                 } else {
                     toast.error(res.data.Message);
                 }

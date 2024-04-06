@@ -3,7 +3,6 @@ import mysql from 'mysql'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
 import jwt from 'jsonwebtoken'
-import multer from 'multer'
 
 require('dotenv').config();
 

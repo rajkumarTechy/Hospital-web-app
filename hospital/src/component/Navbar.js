@@ -38,9 +38,7 @@ const Header = () => {
     const handleLogout=()=>{
       axios.get('https://hospital-web-app-2j3t.vercel.app/logout')
       .then(res=>{
-        localStorage.clear();
         navigate('/')
-        window.location.reload(true)
       }).catch(err=>console.log(err))
     }
 
