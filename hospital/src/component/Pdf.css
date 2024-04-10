@@ -231,10 +231,6 @@
 .head-div{
     page-break-before: always;
 }
-
-.head-div{
-    page-break-before: always;
-}
 .main-table tbody tr.head-div th {
     padding-top: 15px;
     padding-bottom: 5px;
