@@ -96,7 +96,7 @@ app.post('/login', (req,res)=>{
         if(err) return res.json({Message:"Server Side Error"});
         if(data.length > 0){
             const name = data[0].username
-            const token = jwt.sign({ name }, process.env.JWT_SECRET_KEY, { expiresIn: '1d' });
+            const token = jwt.sign({ name }, "our-jsonwebtoken-secret-key", { expiresIn: '1d' });
             res.cookie('token', token, {
                 httpOnly: true, 
                 secure: true, 
