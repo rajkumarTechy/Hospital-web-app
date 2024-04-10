@@ -41,7 +41,7 @@ const verifyUser = (req,res,next) =>{
     if(!token){
         return res.json({Message:"Provide Token"})
     }else{
-        jwt.verify(token,process.env.JWT_SECRET_KEY, (err, decoded) => {
+        jwt.verify(token,"our-jsonwebtoken-secret-key", (err, decoded) => {
             if(err){
             return res.json({Message:"Authentication Error."})
         }else{
