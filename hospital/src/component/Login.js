@@ -25,7 +25,7 @@ const Login = () => {
                     console.log("Success");
 
                     navigate('/');
-                    window.reload(true);
+                    window.location.reload();
 
                 } else {
                     toast.error(res.data.Message);
