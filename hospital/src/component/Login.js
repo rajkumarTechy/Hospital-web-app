@@ -22,10 +22,10 @@ const Login = () => {
         axios.post('https://hospital-web-app-2j3t.vercel.app/login', values)
             .then(res => {
                 if (res.data.Status === "Success") {
-                    console.log("Success");
+                   
 
                     navigate('/');
-                    window.location.reload();
+                    // window.location.reload();
 
                 } else {
                     toast.error(res.data.Message);
