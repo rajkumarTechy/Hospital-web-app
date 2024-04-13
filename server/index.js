@@ -58,7 +58,7 @@ const verifyUser = (req,res,next) =>{
 //     res.send('Hello World!')
 //   })
 
-  app.get('/', verifyUser, (req,res)=>{
+  app.get('/protected', verifyUser, (req,res)=>{
 
     return res.json({Status:"Success", name:req.name})
 

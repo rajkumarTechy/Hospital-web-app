@@ -20,7 +20,7 @@ const Header = () => {
     
     axios.defaults.withCredentials = true;
     useEffect(() => {
-        axios.get('https://hospital-web-app-2j3t.vercel.app')
+        axios.get('https://hospital-web-app-2j3t.vercel.app/protected')
             .then(res => {
                 if (res.data.Status === 'Success') {
                     setAuth(true)
