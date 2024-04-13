@@ -13,6 +13,7 @@ const Header = () => {
 
     const[auth,setAuth] = useState(false)
     const[name,setName] = useState('')
+    const[message,setMessage] = useState('')
     
     const navigate = useNavigate()
 
@@ -26,6 +27,7 @@ const Header = () => {
                     setName(res.data.name); 
                     console.log(res.data.name)
                 } else {
+                    setMessage(res.data.Message)
                     console.log(res.data.Message);
                 }
             })
@@ -62,7 +64,7 @@ const Header = () => {
             
             ):(
             <div className="nav-bar">
-                
+                <h4> {message}</h4>
                 <NavLink to='/login'><h4>login</h4><FontAwesomeIcon className='icon' icon={faUser} /></NavLink>
             </div>
               

@@ -23,8 +23,9 @@ const Login = () => {
             .then(res => {
                 if (res.data.Status === "Success") {
                     console.log("Success");
-                    
+
                     navigate('/');
+                    window.reload(true);
 
                 } else {
                     toast.error(res.data.Message);
