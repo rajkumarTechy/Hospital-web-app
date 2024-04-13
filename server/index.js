@@ -90,21 +90,26 @@ app.get('/latest-pid', (req, res) => {
     })
   })
 
-app.post('/login', (req,res)=>{
-    const sql = "SELECT * FROM users WHERE username = ? AND password = ?"
-    db.query(sql,[req.body.username,req.body.password], (err,data) => {
-        if(err) return res.json({Message:"Server Side Error"});
-        if(data.length > 0){
-            const name = data[0].username
+  app.post('/login', (req, res) => {
+    const sql = "SELECT * FROM users WHERE username = ? AND password = ?";
+    db.query(sql, [req.body.username, req.body.password], (err, data) => {
+        if (err) return res.json({ Message: "Server Side Error" });
+        if (data.length > 0) {
+            const name = data[0].username;
             const token = jwt.sign({ name }, "our-jsonwebtoken-secret-key", { expiresIn: '1d' });
-            res.cookies('token', token);
-            
-            return res.json({Status:"Success"})
-        }else{
-            return res.json({Message:"Invalid Username or Password"})
+            res.cookie('token', token, {
+                httpOnly: true,
+                secure: true,
+                sameSite: 'strict'
+            });
+
+            return res.json({ Status: "Success" });
+        } else {
+            return res.json({ Message: "Invalid Username or Password" });
         }
-    })
-})
+    });
+});
+
 
 app.post('/reports', (req, res)=>{
     const sql = "INSERT INTO `patientreports`(`names`, `age`, `gender`, `contact`, `WBC`, `RBC`, `Hemoglobin`, `MCV`, `MCH`, `Haemotocrit`, `MCHC`, `RDW`, `Paltelet`, `MPV`, `Neutrophils`, `Lymphocytes`, `Monocytes`, `Sodium`, `Pottasium`, `Chloride`, `Bicarbonate`, `Calcium`, `Phosphorus`, `Total_Bilirubin`, `Direct_Bilirubin`, `Indirect_Bilirubin`, `SGOT`, `SGPT`, `Alkaline_Phosphate`, `Total_Protein`, `Albumin`, `Globumin`, `Total_Cholestrol`, `Triglycerides`, `LDL_Cholestrol`, `HDL_Cholestrol`, `Non_HDL_Cholestrol`, `VLDL_Cholestrol`, `Albumin_urine`, `Sugar`, `Pus_Cell`, `Epithelial_Cell`, `RBCC`, `Crystal`, `Fasting_Blood_Sugar`, `Post_Prandial_Blood`, `Random_Blood_Sugar`, `HABC`, `Blood_Area`, `Serum_Creatinine`, `Serum_Uricacid`,`coll_date`,`CRP`,`doc_name`) VALUES (?)"
