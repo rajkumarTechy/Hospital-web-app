@@ -22,7 +22,7 @@ const Home = () => {
                 if (res.data.Status === 'Success') {
                     setAuth(true); 
                 } else {
-                    console.log(res.data.Message);
+                    // console.log(res.data.Message);
                 }
             })
             .catch(error => {
