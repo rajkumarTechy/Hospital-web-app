@@ -23,6 +23,7 @@ const Login = () => {
             .then(res => {
                 if (res.data.Status === "Success") {
                     console.log("Success");
+                    
                     navigate('/');
 
                 } else {
