@@ -86,7 +86,7 @@ const Pdf = () => {
             image: { type: 'jpeg', quality: 1 },
             html2canvas: { scale: 2 },
             jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
-            pagebreak: { mode: ['css', 'legacy'] }
+            pagebreak: { mode: ['css', 'legacy'], avoid: ['tr', 'td'] }
         };
         html2pdf().from(pdfs).set(opt).save();
 
